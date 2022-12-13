@@ -9,7 +9,7 @@ const Statistics = ( props ) => {
     return ( <section className="statistics">
     {
         props.title ? (
-            <h2 className="title">{props.title}</h2>
+            <h2 className="stat-title">{props.title}</h2>
         ) : ( 
             <></> 
         )

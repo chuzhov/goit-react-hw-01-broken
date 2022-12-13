@@ -1,8 +1,8 @@
 const Stat = ( props ) => {
     
-    return ( <li className="item">
-        <p className="label">{props.label}</p>
-        <p className="percentage">{props.percentage}%</p>
+    return ( <li className="stat-item">
+        <p className="stat-label">{props.label}</p>
+        <p className="stat-percentage">{props.percentage}%</p>
       </li>
       
   )
