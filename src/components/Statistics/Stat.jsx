@@ -1,8 +1,10 @@
+import css from "./Statistics.module.css";
+
 const Stat = ( props ) => {
     
-    return ( <li className="stat-item">
-        <p className="stat-label">{props.label}</p>
-        <p className="stat-percentage">{props.percentage}%</p>
+    return ( <li className={css["stat-item"]}>
+        <p className={css["stat-label"]}>{props.label}</p>
+        <p className={css["stat-percentage"]}>{props.percentage}%</p>
       </li>
       
   )

@@ -1,6 +1,6 @@
 //import PropTypes from "prop-types";
 import Stat from "./Stat"
-import "./Statistics.module.css";
+import css from "./Statistics.module.css";
 
 const Statistics = ( props ) => {
 
@@ -9,12 +9,12 @@ const Statistics = ( props ) => {
     return ( <section className="statistics">
     {
         props.title ? (
-            <h2 className="stat-title">{props.title}</h2>
+            <h2 className={css["stat-title"]}>{props.title}</h2>
         ) : ( 
             <></> 
         )
     }
-    <ul className="stat-list">
+    <ul className={css["stat-list"]}>
     {
         stats.map((el) => (
         <Stat
