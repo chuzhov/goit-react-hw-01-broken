@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import "./Profile.css";
 
 const Profile = ( props ) => {
@@ -37,24 +37,24 @@ const Profile = ( props ) => {
   )
 }
 
-Profile.propTypes = {
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired, 
-    location: PropTypes.string.isRequired, 
-    //if a stat is represented by gaint number above one million it displays like string '1M' etc: 1Q is 1 quadrillion
-    followers: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-    ]).isRequired,
-    views: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-    ]).isRequired, 
-    likes: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-    ]).isRequired,
-}
+// Profile.propTypes = {
+//     username: PropTypes.string.isRequired,
+//     tag: PropTypes.string.isRequired,
+//     avatar: PropTypes.string.isRequired, 
+//     location: PropTypes.string.isRequired, 
+//     //if a stat is represented by gaint number above one million it displays like string '1M' etc: 1Q is 1 quadrillion
+//     followers: PropTypes.oneOfType([
+//         PropTypes.string,
+//         PropTypes.number,
+//     ]).isRequired,
+//     views: PropTypes.oneOfType([
+//         PropTypes.string,
+//         PropTypes.number,
+//     ]).isRequired, 
+//     likes: PropTypes.oneOfType([
+//         PropTypes.string,
+//         PropTypes.number,
+//     ]).isRequired,
+// }
 
 export default Profile;

@@ -1,6 +1,7 @@
-import Profile from "./Profile/Profile"
-import userData from "../db/profile.json"
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers"
+import Profile from "./Profile/Profile";
+import Statistics from "./Statistics/Statistics";
+import userData from "../db/profile.json";
+import userStatistics from "../db/statistics.json";
 
 export const App = () => {
   return (
@@ -14,7 +15,8 @@ export const App = () => {
       //   color: '#010101'
       // }}
     >
-      <Profile user ={ userData } />
+      <Profile user = { userData } />
+      <Statistics title="Members of Sith Order" stats={userStatistics} />
     </div>
   );
 };
