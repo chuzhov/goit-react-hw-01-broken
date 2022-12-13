@@ -1,5 +1,5 @@
 //import PropTypes from "prop-types";
-import "./Profile.css";
+import "./Profile.module.css";
 
 const Profile = ( props ) => {
 
